@@ -2,13 +2,12 @@ import React, { useEffect, useState } from 'react'
 
 export const Quote = ({data}) => {
 
-    // const [counter, setCounter] = useState(0)
+    const [counter, setCounter] = useState(0)
 
-    // useEffect( () => {
-    //     setCounter(counter+1)
-    // }, [data])
+    useEffect( () => {
+        setCounter(counter+1)
+    }, [data])
     
-
     return (
         <blockquote className="blockquote text-end">
             {

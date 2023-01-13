@@ -1,7 +1,5 @@
-import { useCounter } from "../hooks/useCounter";
-import { useFetch } from "../hooks/useFetch"
-import { LoadingQuote } from "./LoadingQuote";
-import { Quote } from "./Quote";
+import { useCounter, useFetch } from "../hooks";
+import { LoadingQuote, Quote } from "./";
 
 export const MultipleCustomHooks = () => {
 
@@ -9,8 +7,6 @@ export const MultipleCustomHooks = () => {
 
     const { data, isLoading, hasError } = useFetch(`https://api.breakingbadquotes.xyz/v1/quotes/${counter}`);
 	
-	console.log(data);
-
 	return (
 	<>
 		<h1>BreakingBad Quotes</h1>
